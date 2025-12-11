@@ -1,13 +1,544 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Anbuselvan-Annamalai | github-clone-page</title>
-    <link rel="stylesheet" href="./src/style.css">
-  </head>
-  <body>
-    <h1 class="text-3xl font-bold underline text-red-500"> Hello world! </h1>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anbuselvan-Annamalai | github-clone-page</title>
+  <link rel="stylesheet" href="./src/style.css">
+</head>
+
+<body class="bg-[#0d1117] text-white fill-white">
+  <header class="bg-[#25292e] py-4">
+    <nav class="flex items-center px-8 justify-between">
+      <!-- left -->
+      <div class="flex items-center space-x-3">
+        <!-- logo -->
+        <div class="">
+          <a href="">
+            <svg height="32" aria-hidden="true" viewBox="0 0 24 24" version="1.1" width="32" data-view-component="true"
+              class="">
+              <path
+                d="M12 1C5.923 1 1 5.923 1 12c0 4.867 3.149 8.979 7.521 10.436.55.096.756-.233.756-.522 0-.262-.013-1.128-.013-2.049-2.764.509-3.479-.674-3.699-1.292-.124-.317-.66-1.293-1.127-1.554-.385-.207-.936-.715-.014-.729.866-.014 1.485.797 1.691 1.128.99 1.663 2.571 1.196 3.204.907.096-.715.385-1.196.701-1.471-2.448-.275-5.005-1.224-5.005-5.432 0-1.196.426-2.186 1.128-2.956-.111-.275-.496-1.402.11-2.915 0 0 .921-.288 3.024 1.128a10.193 10.193 0 0 1 2.75-.371c.936 0 1.871.123 2.75.371 2.104-1.43 3.025-1.128 3.025-1.128.605 1.513.221 2.64.111 2.915.701.77 1.127 1.747 1.127 2.956 0 4.222-2.571 5.157-5.019 5.432.399.344.743 1.004.743 2.035 0 1.471-.014 2.654-.014 3.025 0 .289.206.632.756.522C19.851 20.979 23 16.854 23 12c0-6.077-4.922-11-11-11Z">
+              </path>
+            </svg>
+          </a>
+        </div>
+        <!-- nav-list -->
+        <div class="flex space-x-3 mx-3">
+          <!-- 1 -->
+          <div class="">
+            <a href="" class="flex items-center">Platform
+              <svg aria-hidden="true" focusable="false" class="rotate-90 mx-2 fill-[#777a7d]" viewBox="0 0 16 16"
+                width="16" height="16" fill="currentColor" display="inline-block" overflow="visible"
+                style="vertical-align:text-bottom">
+                <path
+                  d="M6.22 3.22a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042L9.94 8 6.22 4.28a.75.75 0 0 1 0-1.06Z">
+                </path>
+              </svg>
+            </a>
+          </div>
+          <!-- 2 -->
+          <div class="">
+            <a href="" class="flex items-center">Solutions
+              <svg aria-hidden="true" focusable="false" class="rotate-90 mx-2 fill-[#777a7d]" viewBox="0 0 16 16"
+                width="16" height="16" fill="currentColor" display="inline-block" overflow="visible"
+                style="vertical-align:text-bottom">
+                <path
+                  d="M6.22 3.22a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042L9.94 8 6.22 4.28a.75.75 0 0 1 0-1.06Z">
+                </path>
+              </svg>
+            </a>
+          </div>
+          <!-- 3 -->
+          <div class="">
+            <a href="" class="flex items-center">Resources
+              <svg aria-hidden="true" focusable="false" class="rotate-90 mx-2 fill-[#777a7d]" viewBox="0 0 16 16"
+                width="16" height="16" fill="currentColor" display="inline-block" overflow="visible"
+                style="vertical-align:text-bottom">
+                <path
+                  d="M6.22 3.22a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042L9.94 8 6.22 4.28a.75.75 0 0 1 0-1.06Z">
+                </path>
+              </svg>
+            </a>
+          </div>
+          <!-- 4 -->
+          <div class="">
+            <a href="" class="flex items-center">Open Source
+              <svg aria-hidden="true" focusable="false" class="rotate-90 mx-2 fill-[#777a7d]" viewBox="0 0 16 16"
+                width="16" height="16" fill="currentColor" display="inline-block" overflow="visible"
+                style="vertical-align:text-bottom">
+                <path
+                  d="M6.22 3.22a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042L9.94 8 6.22 4.28a.75.75 0 0 1 0-1.06Z">
+                </path>
+              </svg>
+            </a>
+          </div>
+          <!-- 5 -->
+          <div class="">
+            <a href="" class="flex items-center">Enterprise
+              <svg aria-hidden="true" focusable="false" class="rotate-90 mx-2 fill-[#777a7d]" viewBox="0 0 16 16"
+                width="16" height="16" fill="currentColor" display="inline-block" overflow="visible"
+                style="vertical-align:text-bottom">
+                <path
+                  d="M6.22 3.22a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042L9.94 8 6.22 4.28a.75.75 0 0 1 0-1.06Z">
+                </path>
+              </svg>
+            </a>
+          </div>
+          <!-- 6 -->
+          <div class="">
+            <a href="" class="flex items-center">Pricing
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- right-sec -->
+      <div class="flex items-center">
+        <!-- lr -->
+        <div class="flex items-center space-x-5 mx-5">
+          <!-- input -->
+          <div class="relative">
+            <div class="absolute inset-y-0 start-0 flex items-center pl-3">
+              <svg class="w-4 h-4 text-body" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24"
+                height="24" fill="none" viewBox="0 0 24 24">
+                <path stroke="#979A9C" stroke-linecap="round" stroke-width="2"
+                  d="m21 21-3.5-3.5M17 10a7 7 0 1 1-14 0 7 7 0 0 1 14 0Z" />
+              </svg>
+            </div>
+            <input type="search" id="search" class="px-30 py-1.5 pl-9 border border-[#818b98] text-sm rounded shadow-xs"
+              placeholder="Search or jump to..." />
+            <div class="absolute inset-y-0 start-69 flex items-center pl-3">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" aria-hidden="true" class="mr-1">
+                <path fill="none" stroke="#979A9C" opacity=".4"
+                  d="M3.5.5h12c1.7 0 3 1.3 3 3v13c0 1.7-1.3 3-3 3h-12c-1.7 0-3-1.3-3-3v-13c0-1.7 1.3-3 3-3z"></path>
+                <path fill="#979A9C" d="M11.8 6L8 15.1h-.9L10.8 6h1z"></path>
+              </svg>
+            </div>
+          </div>
+          <!-- 2 -->
+          <div class="">
+            <a href="">Sign in</a>
+          </div>
+        </div>
+        <!-- rr -->
+        <div class="flex items-center space-x-3">
+          <!-- 1 -->
+          <div class="">
+            <a href="" class="border rounded-lg p-2">Sign up</a>
+          </div>
+          <!-- 2 -->
+          <div class="border rounded-lg p-2.5">
+            <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true"
+              class="">
+              <path
+                d="M15 2.75a.75.75 0 0 1-.75.75h-4a.75.75 0 0 1 0-1.5h4a.75.75 0 0 1 .75.75Zm-8.5.75v1.25a.75.75 0 0 0 1.5 0v-4a.75.75 0 0 0-1.5 0V2H1.75a.75.75 0 0 0 0 1.5H6.5Zm1.25 5.25a.75.75 0 0 0 0-1.5h-6a.75.75 0 0 0 0 1.5h6ZM15 8a.75.75 0 0 1-.75.75H11.5V10a.75.75 0 1 1-1.5 0V6a.75.75 0 0 1 1.5 0v1.25h2.75A.75.75 0 0 1 15 8Zm-9 5.25v-2a.75.75 0 0 0-1.5 0v1.25H1.75a.75.75 0 0 0 0 1.5H4.5v1.25a.75.75 0 0 0 1.5 0v-2Zm9 0a.75.75 0 0 1-.75.75h-6a.75.75 0 0 1 0-1.5h6a.75.75 0 0 1 .75.75Z">
+              </path>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- nav-2 -->
+  <div class="border-b border-gray-700 grid grid-cols-12">
+    <div class="col-span-4"></div>
+    <nav class="flex items-center space-x-6 pt-8 pb-4 col-span-8">
+      <!-- 1 -->
+      <div class="">
+        <a href="" class="flex items-center space-x-2">
+          <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true"
+            class="octicon octicon-book UnderlineNav-octicon hide-sm">
+            <path
+              d="M0 1.75A.75.75 0 0 1 .75 1h4.253c1.227 0 2.317.59 3 1.501A3.743 3.743 0 0 1 11.006 1h4.245a.75.75 0 0 1 .75.75v10.5a.75.75 0 0 1-.75.75h-4.507a2.25 2.25 0 0 0-1.591.659l-.622.621a.75.75 0 0 1-1.06 0l-.622-.621A2.25 2.25 0 0 0 5.258 13H.75a.75.75 0 0 1-.75-.75Zm7.251 10.324.004-5.073-.002-2.253A2.25 2.25 0 0 0 5.003 2.5H1.5v9h3.757a3.75 3.75 0 0 1 1.994.574ZM8.755 4.75l-.004 7.322a3.752 3.752 0 0 1 1.992-.572H14.5v-9h-3.495a2.25 2.25 0 0 0-2.25 2.25Z">
+            </path>
+          </svg>
+          <p>Overview</p>
+        </a>
+      </div>
+      <!-- 2 -->
+      <div class="">
+        <a href="" class="flex items-center space-x-2">
+          <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true"
+            class="octicon octicon-repo UnderlineNav-octicon hide-sm">
+            <path
+              d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z">
+            </path>
+          </svg>
+          <p>Repositories <span class="text-xs bg-[#2c333a] p-0.5 px-1 rounded-xl ml-1">186</span></p>
+        </a>
+      </div>
+      <!-- 3 -->
+      <div class="">
+        <a href="" class="flex items-center space-x-2">
+          <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true"
+            class="octicon octicon-table UnderlineNav-octicon hide-sm">
+            <path
+              d="M0 1.75C0 .784.784 0 1.75 0h12.5C15.216 0 16 .784 16 1.75v12.5A1.75 1.75 0 0 1 14.25 16H1.75A1.75 1.75 0 0 1 0 14.25ZM6.5 6.5v8h7.75a.25.25 0 0 0 .25-.25V6.5Zm8-1.5V1.75a.25.25 0 0 0-.25-.25H6.5V5Zm-13 1.5v7.75c0 .138.112.25.25.25H5v-8ZM5 5V1.5H1.75a.25.25 0 0 0-.25.25V5Z">
+            </path>
+          </svg>
+          <p>Projects</p>
+        </a>
+      </div>
+      <!-- 4 -->
+      <div class="">
+        <a href="" class="flex items-center space-x-2">
+          <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true"
+            class="octicon octicon-package UnderlineNav-octicon hide-sm">
+            <path
+              d="m8.878.392 5.25 3.045c.54.314.872.89.872 1.514v6.098a1.75 1.75 0 0 1-.872 1.514l-5.25 3.045a1.75 1.75 0 0 1-1.756 0l-5.25-3.045A1.75 1.75 0 0 1 1 11.049V4.951c0-.624.332-1.201.872-1.514L7.122.392a1.75 1.75 0 0 1 1.756 0ZM7.875 1.69l-4.63 2.685L8 7.133l4.755-2.758-4.63-2.685a.248.248 0 0 0-.25 0ZM2.5 5.677v5.372c0 .09.047.171.125.216l4.625 2.683V8.432Zm6.25 8.271 4.625-2.683a.25.25 0 0 0 .125-.216V5.677L8.75 8.432Z">
+            </path>
+          </svg>
+          <p>Packages</p>
+        </a>
+      </div>
+      <!-- 5 -->
+      <div class="">
+        <a href="" class="flex items-center space-x-2">
+          <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true"
+            class="octicon octicon-star UnderlineNav-octicon hide-sm">
+            <path
+              d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Zm0 2.445L6.615 5.5a.75.75 0 0 1-.564.41l-3.097.45 2.24 2.184a.75.75 0 0 1 .216.664l-.528 3.084 2.769-1.456a.75.75 0 0 1 .698 0l2.77 1.456-.53-3.084a.75.75 0 0 1 .216-.664l2.24-2.183-3.096-.45a.75.75 0 0 1-.564-.41L8 2.694Z">
+            </path>
+          </svg>
+          <p>Stars <span class="text-xs bg-[#2c333a] p-0.5 px-1 rounded-xl ml-1">75</span></p>
+        </a>
+      </div>
+    </nav>
+  </div>
+  <main class="grid grid-cols-10">
+    <!-- l -->
+    <div class="col-span-3 grid grid-cols-7">
+      <div class="col-span-2"></div>
+      <aside class="col-span-4 pt-3">
+        <img src="https://github.com/anburocky3.png" alt="profile" class="rounded-full w-70">
+        <!-- 1 -->
+        <div class="mt-2">
+          <h2 class="text-2xl font-semibold">Anbuselvan Annamalai</h2>
+          <p class="text-2xl text-gray-500">anburocky3</p>
+          <!-- btn -->
+          <div class="grid grid-cols-2 gap-2 mt-2">
+            <div
+              class="col text-center items-center text-sm font-semibold py-1 bg-[#212830] border border-[#3d444d] rounded">
+              <a href="" class="">Follow</a>
+            </div>
+            <div
+              class="col justify-items-center text-sm font-semibold items-center py-1 bg-[#212830] border border-[#3d444d] rounded">
+              <a href="" class="flex items-center">
+                <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
+                  data-view-component="true" class="mr-1" stroke="#db61a2">
+                  <path
+                    d="m8 14.25.345.666a.75.75 0 0 1-.69 0l-.008-.004-.018-.01a7.152 7.152 0 0 1-.31-.17 22.055 22.055 0 0 1-3.434-2.414C2.045 10.731 0 8.35 0 5.5 0 2.836 2.086 1 4.25 1 5.797 1 7.153 1.802 8 3.02 8.847 1.802 10.203 1 11.75 1 13.914 1 16 2.836 16 5.5c0 2.85-2.045 5.231-3.885 6.818a22.066 22.066 0 0 1-3.744 2.584l-.018.01-.006.003h-.002ZM4.25 2.5c-1.336 0-2.75 1.164-2.75 3 0 2.15 1.58 4.144 3.365 5.682A20.58 20.58 0 0 0 8 13.393a20.58 20.58 0 0 0 3.135-2.211C12.92 9.644 14.5 7.65 14.5 5.5c0-1.836-1.414-3-2.75-3-1.373 0-2.609.986-3.029 2.456a.749.749 0 0 1-1.442 0C6.859 3.486 5.623 2.5 4.25 2.5Z">
+                  </path>
+                </svg>
+                Sponsor</a>
+            </div>
+          </div>
+          <p class="mt-2">flawed. & (still) worthy.</p>
+
+          <!-- follow-info -->
+          <div class="flex space-x-1 mt-3">
+            <a class="flex items-center text-sm space-x-1" href="https://github.com/anburocky3?tab=followers">
+              <svg text="muted" aria-hidden="true" height="16" viewBox="0 0 16 16" fill="#9198a1" version="1.1"
+                width="16" data-view-component="true" class="octicon octicon-people">
+                <path
+                  d="M2 5.5a3.5 3.5 0 1 1 5.898 2.549 5.508 5.508 0 0 1 3.034 4.084.75.75 0 1 1-1.482.235 4 4 0 0 0-7.9 0 .75.75 0 0 1-1.482-.236A5.507 5.507 0 0 1 3.102 8.05 3.493 3.493 0 0 1 2 5.5ZM11 4a3.001 3.001 0 0 1 2.22 5.018 5.01 5.01 0 0 1 2.56 3.012.749.749 0 0 1-.885.954.752.752 0 0 1-.549-.514 3.507 3.507 0 0 0-2.522-2.372.75.75 0 0 1-.574-.73v-.352a.75.75 0 0 1 .416-.672A1.5 1.5 0 0 0 11 5.5.75.75 0 0 1 11 4Zm-5.5-.5a2 2 0 1 0-.001 3.999A2 2 0 0 0 5.5 3.5Z">
+                </path>
+              </svg>
+              <span class="text-bold">615</span>
+              <p class="text-[#9198a1]">followers ·</p>
+            </a>
+            <a class="flex items-center text-sm space-x-1" href="https://github.com/anburocky3?tab=followers">
+              <svg text="muted" aria-hidden="true" height="16" viewBox="0 0 16 16" fill="#9198a1" version="1.1"
+                width="16" data-view-component="true" class="octicon octicon-people">
+                <path
+                  d="M2 5.5a3.5 3.5 0 1 1 5.898 2.549 5.508 5.508 0 0 1 3.034 4.084.75.75 0 1 1-1.482.235 4 4 0 0 0-7.9 0 .75.75 0 0 1-1.482-.236A5.507 5.507 0 0 1 3.102 8.05 3.493 3.493 0 0 1 2 5.5ZM11 4a3.001 3.001 0 0 1 2.22 5.018 5.01 5.01 0 0 1 2.56 3.012.749.749 0 0 1-.885.954.752.752 0 0 1-.549-.514 3.507 3.507 0 0 0-2.522-2.372.75.75 0 0 1-.574-.73v-.352a.75.75 0 0 1 .416-.672A1.5 1.5 0 0 0 11 5.5.75.75 0 0 1 11 4Zm-5.5-.5a2 2 0 1 0-.001 3.999A2 2 0 0 0 5.5 3.5Z">
+                </path>
+              </svg>
+              <span class="text-bold">14</span>
+              <p class="text-[#9198a1]">following</p>
+            </a>
+          </div>
+          <!-- ul -->
+          <ul class="*:flex mt-6 mb-5 space-y-3 *:space-x-2 *:items-center *:text-sm">
+            <!-- 1 -->
+            <li class=""><svg
+                 viewBox="0 0 16 16" version="1.1" width="16" height="16"
+                aria-hidden="true">
+                <path
+                  d="M1.75 16A1.75 1.75 0 0 1 0 14.25V1.75C0 .784.784 0 1.75 0h8.5C11.216 0 12 .784 12 1.75v12.5c0 .085-.006.168-.018.25h2.268a.25.25 0 0 0 .25-.25V8.285a.25.25 0 0 0-.111-.208l-1.055-.703a.749.749 0 1 1 .832-1.248l1.055.703c.487.325.779.871.779 1.456v5.965A1.75 1.75 0 0 1 14.25 16h-3.5a.766.766 0 0 1-.197-.026c-.099.017-.2.026-.303.026h-3a.75.75 0 0 1-.75-.75V14h-1v1.25a.75.75 0 0 1-.75.75Zm-.25-1.75c0 .138.112.25.25.25H4v-1.25a.75.75 0 0 1 .75-.75h2.5a.75.75 0 0 1 .75.75v1.25h2.25a.25.25 0 0 0 .25-.25V1.75a.25.25 0 0 0-.25-.25h-8.5a.25.25 0 0 0-.25.25ZM3.75 6h.5a.75.75 0 0 1 0 1.5h-.5a.75.75 0 0 1 0-1.5ZM3 3.75A.75.75 0 0 1 3.75 3h.5a.75.75 0 0 1 0 1.5h-.5A.75.75 0 0 1 3 3.75Zm4 3A.75.75 0 0 1 7.75 6h.5a.75.75 0 0 1 0 1.5h-.5A.75.75 0 0 1 7 6.75ZM7.75 3h.5a.75.75 0 0 1 0 1.5h-.5a.75.75 0 0 1 0-1.5ZM3 9.75A.75.75 0 0 1 3.75 9h.5a.75.75 0 0 1 0 1.5h-.5A.75.75 0 0 1 3 9.75ZM7.75 9h.5a.75.75 0 0 1 0 1.5h-.5a.75.75 0 0 1 0-1.5Z">
+                </path>
+              </svg>
+              <span class="">
+                <div>@CyberdudeNetworks </div>
+              </span>
+            </li>
+            <!-- 2 -->
+            <li class=""><svg class="" viewBox="0 0 16 16" version="1.1"
+                width="16" height="16" aria-hidden="true">
+                <path
+                  d="m12.596 11.596-3.535 3.536a1.5 1.5 0 0 1-2.122 0l-3.535-3.536a6.5 6.5 0 1 1 9.192-9.193 6.5 6.5 0 0 1 0 9.193Zm-1.06-8.132v-.001a5 5 0 1 0-7.072 7.072L8 14.07l3.536-3.534a5 5 0 0 0 0-7.072ZM8 9a2 2 0 1 1-.001-3.999A2 2 0 0 1 8 9Z">
+                </path>
+              </svg>
+              <span class="p-label">Chennai, India, Planet Earth!</span>
+            </li>
+            <!-- 3 -->
+            <li class=" "><svg 
+                height="16" viewBox="0 0 16 16" version="1.1" width="16" class="">
+                <path
+                  d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z">
+                </path>
+              </svg>
+              <a class=""
+                href="https://anbuselvan-annamalai.com">https://anbuselvan-annamalai.com</a>
+            </li>
+            <!-- 4 -->
+            <li class=" "><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 16"
+                width="16" height="16" role="img"  class="">
+                <title id="ae6qeefaarvsozf92c8th4vyn8tuia1r">X</title>
+                <path fill="currentColor"
+                  d="M9.332 6.925 14.544 1h-1.235L8.783 6.145 5.17 1H1l5.466 7.78L1 14.993h1.235l4.78-5.433 3.816 5.433H15L9.332 6.925ZM7.64 8.848l-.554-.775L2.68 1.91h1.897l3.556 4.975.554.775 4.622 6.466h-1.897L7.64 8.848Z">
+                </path>
+              </svg>
+              <a class=""
+                href="">@anbuselvanrocky</a>
+            </li>
+            <!-- 5 -->
+            <li class=" "><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                viewBox="0 0 16 16" fill="none" role="img" class="">
+                <title id="aq5mg3mrikptppndrqnba842m8lsy462">Instagram</title>
+                <g>
+                  <path
+                    d="M4.66536 0C2.0927 0 0 2.09464 0 4.66797V11.3346C0 13.9073 2.09464 16 4.66797 16H11.3346C13.9073 16 16 13.9054 16 11.332V4.66536C16 2.0927 13.9054 0 11.332 0H4.66536ZM12.6667 2.66667C13.0347 2.66667 13.3333 2.96533 13.3333 3.33333C13.3333 3.70133 13.0347 4 12.6667 4C12.2987 4 12 3.70133 12 3.33333C12 2.96533 12.2987 2.66667 12.6667 2.66667ZM8 4C10.206 4 12 5.794 12 8C12 10.206 10.206 12 8 12C5.794 12 4 10.206 4 8C4 5.794 5.794 4 8 4ZM8 5.33333C7.29276 5.33333 6.61448 5.61428 6.11438 6.11438C5.61428 6.61448 5.33333 7.29276 5.33333 8C5.33333 8.70724 5.61428 9.38552 6.11438 9.88562C6.61448 10.3857 7.29276 10.6667 8 10.6667C8.70724 10.6667 9.38552 10.3857 9.88562 9.88562C10.3857 9.38552 10.6667 8.70724 10.6667 8C10.6667 7.29276 10.3857 6.61448 9.88562 6.11438C9.38552 5.61428 8.70724 5.33333 8 5.33333V5.33333Z"
+                    fill="currentColor"></path>
+                </g>
+              </svg>
+              <a class=""
+                href="https://www.instagram.com/anbuselvanrocky">anbuselvanrocky</a>
+            </li>
+            <!-- 6 -->
+            <li class=" "><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                viewBox="0 0 16 16" fill="none" role="img" class="">
+                <title id="aagh47ndel4b0klqme516h3u5qf3c194">YouTube</title>
+                <path
+                  d="M15.6656 3.7488C15.4816 3.0608 14.9392 2.5184 14.2512 2.3344C13.0032 2 8 2 8 2C8 2 2.9968 2 1.7488 2.3344C1.0608 2.5184 0.5184 3.0608 0.3344 3.7488C-2.38419e-08 4.9968 0 8.4 0 8.4C0 8.4 -2.38419e-08 11.8032 0.3344 13.0512C0.5184 13.7392 1.0608 14.2816 1.7488 14.4656C2.9968 14.8 8 14.8 8 14.8C8 14.8 13.0032 14.8 14.2512 14.4656C14.94 14.2816 15.4816 13.7392 15.6656 13.0512C16 11.8032 16 8.4 16 8.4C16 8.4 16 4.9968 15.6656 3.7488ZM6.4 10.4784V6.3216C6.4 6.0136 6.7336 5.8216 7 5.9752L10.6 8.0536C10.8664 8.2072 10.8664 8.5928 10.6 8.7464L7 10.8248C6.7336 10.9792 6.4 10.7864 6.4 10.4784Z"
+                  fill="currentColor"></path>
+              </svg>
+              <a class="Link--primary wb-break-all"
+                href="https://www.youtube.com/@anbuselvanrocky">@anbuselvanrocky</a>
+            </li>
+          </ul>
+          <hr class="text-[#3d444d] mt-3">
+
+          <!-- archive -->
+          <div class="mt-3">
+            <h4 class="font-semibold">Achievements</h4>
+            <div class="grid grid-cols-4 mt-2">
+              <!-- 1 -->
+              <a href="" class="position-relative"><img
+                  src="https://github.githubassets.com/assets/quickdraw-default--medium-0bdca502f5b4.png"
+                  width="64"></a>
+              <!-- 2 -->
+              <a href="" class="position-relative"><img
+                  src="https://github.githubassets.com/assets/yolo-default-be0bbff04951.png" width="64"></a>
+              <!-- 3 -->
+              <a href="" class="position-relative"><img
+                  src="https://github.githubassets.com/assets/pull-shark-default-498c279a747d.png" width="64"></a>
+              <!-- 4 -->
+              <a href="" class="position-relative"><img
+                  src="https://github.githubassets.com/assets/starstruck-default--medium-2670f78c9f2f.png"
+                  width="64"></a>
+              <!-- 5 -->
+              <a href="" class="position-relative"><img
+                  src="https://github.githubassets.com/assets/arctic-code-vault-contributor-default-df8d74122a06.png"
+                  width="64"></a>
+            </div>
+          </div>
+          <hr class="text-[#3d444d] mt-3">
+
+          <!-- highlights -->
+           <div class="mt-3">
+            <h4 class="font-semibold mb-2">Highlights</h4>
+            <div class="mt-2">
+              <div class="">
+            <a class="flex items-center" href="https://docs.github.com/developers/overview/github-developer-program">
+              <svg aria-hidden="true" height="16" viewBox="0 0 16 16" fill="#9198a1" version="1.1" width="16"
+                class="mr-1">
+                <path
+                  d="M6.5.75V2h3V.75a.75.75 0 0 1 1.5 0V2h1.25c.966 0 1.75.784 1.75 1.75V5h1.25a.75.75 0 0 1 0 1.5H14v3h1.25a.75.75 0 0 1 0 1.5H14v1.25A1.75 1.75 0 0 1 12.25 14H11v1.25a.75.75 0 0 1-1.5 0V14h-3v1.25a.75.75 0 0 1-1.5 0V14H3.75A1.75 1.75 0 0 1 2 12.25V11H.75a.75.75 0 0 1 0-1.5H2v-3H.75a.75.75 0 0 1 0-1.5H2V3.75C2 2.784 2.784 2 3.75 2H5V.75a.75.75 0 0 1 1.5 0Zm5.75 11.75a.25.25 0 0 0 .25-.25v-8.5a.25.25 0 0 0-.25-.25h-8.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25ZM5.75 5h4.5a.75.75 0 0 1 .75.75v4.5a.75.75 0 0 1-.75.75h-4.5a.75.75 0 0 1-.75-.75v-4.5A.75.75 0 0 1 5.75 5Zm.75 4.5h3v-3h-3Z">
+                </path>
+              </svg>Developer Program Member
+            </a>
+            </div>
+            <p class="text-[#9198a1] text-sm font-semibold">Block or Report</p>
+            </div>
+           </div>
+        </div>
+      </aside>
+    </div>
+    <!-- r -->
+    <section class="col-span-7 border border-[#3d444d] rounded-2xl mt-7 mr-36 p-7">
+      <div class="mb-5">
+        <small class="font-semibold">anburocky3 / README <span class="text-[#3d444d]">.md</span></small>
+      </div>
+      <div class="">
+        <h1 class="flex items-center text-3xl font-semibold">Hey, I'm Anbuselvan 
+            <img class="w-10 mb-2 ml-2"
+             src="https://camo.githubusercontent.com/33fa1ecbfc674cb894fee42114ce8034fc32529090afc1ef7ef03b2d45c87271/68747470733a2f2f6d656469612e67697068792e636f6d2f6d656469612f6876524a434c467a6361737252346961377a2f67697068792e676966">
+        </h1>
+        <hr class="text-[#3d444d] mt-1 mb-3">
+        <p class="my-2">
+          I'm a software development engineer. I like to work with Laravel, NodeJS and Python. I love Linux Kernel based OSs such
+          as Ubuntu, ArchLinux and CentOS. I'm open-source development enthusiast.
+        </p>
+        <div class="flex mt-4">
+          <!-- 1 -->
+        <a><img
+              src="https://camo.githubusercontent.com/cbaab5f6c6902784db911ac57524a664350471eced33945681aa9c19bc53d212/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f666f6c6c6f776572732f616e6275726f636b79333f6c6162656c3d466f6c6c6f77267374796c653d736f6369616c"
+              alt="Github"></a>
+              <!-- 2 -->
+          <a><img
+              src="https://camo.githubusercontent.com/df7fdf44de8d1522c401fa78ea57c6296c649f7b88f3d97d55794d01c44ebdb5/68747470733a2f2f6b6f6d617265762e636f6d2f67687076632f3f757365726e616d653d616e6275726f636b793326636f6c6f723d677265656e"
+              alt=""></a>
+              <!-- 3 -->
+          <a><img
+              src="https://camo.githubusercontent.com/89efae8e39142b4d17f3d272a7b6657ba722561711dae54158c279ba65926e41/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f2d416e627573656c76616e253230416e6e616d616c61692d626c75653f7374796c653d666c61742d737175617265266c6f676f3d6c696e6b6564696e266c6f676f436f6c6f723d7768697465266c696e6b3d68747470733a2f2f7777772e6c696e6b6564696e2e636f6d2f696e2f616e6275726f636b79332f"
+              alt="Linkedin"></a>
+              <!-- 4 -->
+          <a><img
+              src="https://camo.githubusercontent.com/fab4c0a432d53601d35066f35942016da2791ed411087bb5155dda7b6c8f8d77/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f496e7374616772616d2d2532334534343035462e7376673f6c6f676f3d496e7374616772616d266c6f676f436f6c6f723d7768697465"></a>
+              <!-- 5 -->
+          <a><img
+              src="https://camo.githubusercontent.com/4b319bf82c78eb3228d8f23aed5f55bb43ab51f9f3594ac56320280c6db46286/68747470733a2f2f696d672e736869656c64732e696f2f646973636f72642f3734323334373239363039313533373434382e7376673f6c6162656c3d446973636f7264266c6f676f3d446973636f726426636f6c6f72423d373238396461"
+              alt="Support Server"></a>
+              <!-- 6 -->
+          <a><img
+              src="https://camo.githubusercontent.com/7f58055c1031600ff28209b64a0db7d39120fcfba57c42461f8710051ac07b1c/68747470733a2f2f696d672e736869656c64732e696f2f796f75747562652f6368616e6e656c2f73756273637269626572732f55437465556a38624c3170705a63533730554357725666773f7374796c653d736f6369616c"
+              alt="Cyberdude youtube"></a>
+        </div>
+        <!-- 2 -->
+        <div class="mt-4">
+          <h2 class="font-semibold text-xl">⚡️ A Few Quick Facts</h2>
+          <hr class="text-[#3d444d] mt-2 mb-3">
+          <p dir="auto">🔭 I’m <b>Founder/CEO, Principal Scientist</b> of <a href="https://cyberdudenetworks.com"
+              rel="nofollow"><b>@cyberdude</b></a>.<br>
+              🧐 Learning about life, tech &amp; <del>love</del>.<br>
+              👨‍💻 Most of my projects are available on GitHub.<br>
+              📝 I regularly write articles on my blog.<br>
+              💬 Ping me about anything that makes people feel <code>WoW</code>.<br>
+              📙 Check out my resume by works! I don't have pdf!<br>
+              🎉 <b>Fun Fact:</b> <code>👉 பிடித்ததும் ஒரு நாள் பிடிக்காமலும் போகலாம்!</code><br>
+              🔗 <b>My Portfolio:</b> <a href="https://anbuselvan-annamalai.com" rel="nofollow">https://anbuselvan-annamalai.com</a> 😉</p>
+        </div>
+        <!-- stacks -->
+        <div class="mt-4">
+          <h1 class="font-semibold text-3xl">💻 Tech Stack:</h1>
+          <hr class="text-[#3d444d] mt-2 mb-3">
+          <div class="space-y-8 *:space-y-3">
+          <!-- 1 -->
+          <div class="">
+          <h3 class="font-semibold text-xl">Design</h3>
+          <img
+                src="https://camo.githubusercontent.com/edec76d52ca284f9ee6e452c8df854c674218b7387edcd1124bff1ebc1760acf/68747470733a2f2f736b696c6c69636f6e732e6465762f69636f6e733f693d61652c61692c61752c6669676d612c70722c70732c7864267468656d653d6c69676874"
+                alt="My Graphic Skills"
+                style="max-width: 100%;">
+          </div>
+          <!-- 2 -->
+          <div class="">
+          <h3 class="font-semibold text-xl">Multi-purpose</h3>
+          <img
+                src="https://camo.githubusercontent.com/82c6c5042ef5287c5e96d012628b6ca3aca72bc7f4c8838631efb82179155308/68747470733a2f2f736b696c6c69636f6e732e6465762f69636f6e733f693d632c636d616b652c6370702c646172742c676f2c707974686f6e267468656d653d6c69676874"
+                alt="My Graphic Skills"
+                style="max-width: 100%;">
+          </div>
+          <!-- 3 -->
+          <div class="">
+          <h3 class="font-semibold text-xl">Front-End Development</h3>
+          <img
+                src="https://camo.githubusercontent.com/be63ccedae3c84cbb54e05b3129720ee8f15157ef35a20927b36f75373c66df8/68747470733a2f2f736b696c6c69636f6e732e6465762f69636f6e733f693d616c70696e656a732c616e67756c61722c626f6f7473747261702c6373732c656c656374726f6e2c6761747362792c68746d6c2c6a732c6a71756572792c6c6573732c6d6174657269616c75692c6e6578746a732c6e7578746a732c70696e69612c72656163742c72656475782c72656d69782c726f6c6c75706a732c736173732c7376656c74652c7461696c77696e642c74732c7675652c7761736d267468656d653d6c69676874"
+                alt="My Skills"
+                style="max-width: 100%;">
+          </div>
+          <!-- 4 -->
+          <div class="">
+          <h3 class="font-semibold text-xl">Back-End Development</h3>
+          <img
+                src="https://camo.githubusercontent.com/dfe85edfb065579aee521506dbcb81066168e5f5b5af28c22fce298629ccf5a3/68747470733a2f2f736b696c6c69636f6e732e6465762f69636f6e733f693d646a616e676f2c657870726573732c666173746170692c666c61736b2c6a6176612c6c61726176656c2c6e6f64656a732c7068702c737072696e67267468656d653d6c69676874"
+                alt="My Skills"
+                style="max-width: 100%;">
+          </div>
+          <!-- 5 -->
+          <div class="">
+          <h3 class="font-semibold text-xl">Mobile App Development</h3>
+          <img
+                src="https://camo.githubusercontent.com/b935f38e604632c896d4ea996202a95154298521d06bd06e21ff4c6b1abae213/68747470733a2f2f736b696c6c69636f6e732e6465762f69636f6e733f693d666c75747465722c6b6f746c696e267468656d653d6c69676874"
+                style="max-width: 100%;">
+          </div>
+          <!-- 6 -->
+          <div class="">
+          <h3 class="font-semibold text-xl">Databases</h3>
+          <img
+                src="https://camo.githubusercontent.com/dfa6d9dd08f561298e0b537bc44d253e95dbbbe0cc70a9071cba6bc353e9f349/68747470733a2f2f736b696c6c69636f6e732e6465762f69636f6e733f693d63617373616e6472612c6d6f6e676f64622c6d7973716c2c706f7374677265732c707269736d612c73716c6974652c7375706162617365267468656d653d6c69676874"
+                alt="My Skills"
+                style="max-width: 100%;">
+          </div>
+          <!-- 7 -->
+          <div class="">
+            <h3 class="font-semibold text-xl">Tooling</h3>
+            <img
+                  src="https://camo.githubusercontent.com/3cd1c708867e08d0494083763c1d4bf5c7c02ffc3c293f9efbfb0b4c4d994099/68747470733a2f2f736b696c6c69636f6e732e6465762f69636f6e733f693d616e64726f696473747564696f2c6269746275636b65742c62756e2c64656e6f2c646f636b65722c66697265626173652c6769746875622c676974687562616374696f6e732c6769742c6769746c61622c696465612c6d642c6e656f76696d2c6e67696e782c6e706d2c6f6273696469616e2c6f70656e63762c70687073746f726d2c706f73746d616e2c7079636861726d2c706e706d2c71742c72617370626572727970692c7375626c696d652c7673636f64652c76697375616c73747564696f2c77656273746f726d2c7961726e267468656d653d6c69676874"
+                  alt="My Skills"
+                  style="max-width: 100%;">
+          </div>
+          <!-- 8 -->
+          <div class="">
+          <h3 class="font-semibold text-xl">Data Science & ML</h3>
+          <img
+            src="https://camo.githubusercontent.com/570885266798fcd338b48a11b3206db43b6acca0d6cbbc9fc843b78abe71b51a/68747470733a2f2f736b696c6c69636f6e732e6465762f69636f6e733f693d6d61746c61622c7079746f726368267468656d653d6c69676874"
+            alt="My Skills" 
+            style="max-width: 100%;">
+          </div>
+          <!-- 9 -->
+          <div class="">
+            <h3 class="font-semibold text-xl">Operating Systems</h3>
+            <img
+              src="https://camo.githubusercontent.com/82424367ce2dee993ac1b4e5c2924edb5e45e720df20a910e7591957a3e02b86/68747470733a2f2f736b696c6c69636f6e732e6465762f69636f6e733f693d6170706c652c617263682c6b616c692c6c696e75782c7562756e74752c77696e646f7773267468656d653d6c69676874"
+              alt="My Skills"
+              style="max-width: 100%;">
+          </div>
+          <!-- 10 -->
+          <div class="">
+          <h3 class="font-semibold text-xl">Scripting</h3>
+          <img
+            src="https://camo.githubusercontent.com/eb8b22878f4e43777b2c850f6ab9918b68b9e1897e054134028ab09a4fe288d0/68747470733a2f2f736b696c6c69636f6e732e6465762f69636f6e733f693d626173682c7068702c706f7765727368656c6c2c707974686f6e2c7265676578267468656d653d6c69676874"
+            alt="My Skills" 
+            style="max-width: 100%;">
+          </div>
+          <!-- 11 -->
+          <div class="">
+            <h3 class="font-semibold text-xl">Deployments</h3>
+            <img
+              src="https://camo.githubusercontent.com/f98bf0dd383426f6c72b1bbc8decac3f8158f571aaaa1c4e9e2f39d854a5f193/68747470733a2f2f736b696c6c69636f6e732e6465762f69636f6e733f693d6177732c617a7572652c636c6f7564666c6172652c6763702c6e65746c6966792c76657263656c267468656d653d6c69676874"
+              alt="My Skills"
+              style="max-width: 100%;">
+          </div>
+          </div>
+        </div>
+        <hr class="text-[#3d444d] mt-10">
+        <div class="mt-10">
+          <div class="">
+            <h3 class="text-xl font-semibold">✍️ Programmer says:</h3>
+            <img src="https://camo.githubusercontent.com/6d596d994c1abc4c2186a8a8ff933496a1f4fa1fa2f59e5fbcdb91e61523f716/68747470733a2f2f71756f7465732d6769746875622d726561646d652e76657263656c2e6170702f6170693f747970653d686f72697a6f6e74616c267468656d653d7261646963616c"
+            style="max-width: 100%;"
+            class="mt-5">
+          </div>
+        </div>
+        <!-- /// -->
+      </div>
+    </section>
+  </main>
+</body>
+
 </html>
